@@ -29,4 +29,13 @@ print(always_false(0))
 print(always_false(-1))
 print(always_false(1))
 
+#movie rating 
+def movie_rating(rating):
+  if (rating <= 5):
+    return "Avoid at all costs!"
+  # between 5 and 9
+  if (rating < 9):
+    return "This one is fun"
+  return "Outstanding"
+print(movie_rating(5))
 
