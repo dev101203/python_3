@@ -14,3 +14,8 @@ print(gradebook)
 full_gradebook = last_semester_gradebook + gradebook
 
 print(full_gradebook)
+###
+string1 = "The quick brown"
+string2 = "fox jumps over"
+string3 = string1+string2
+print(string3+" the lazy dog.")
