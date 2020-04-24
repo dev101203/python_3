@@ -43,7 +43,7 @@ def ground_premium_drone_shipping(weight):
     method = "drone"
     cost = drone
   print(
-"The cheapest option is $%.2f with %s shipping"
+"The cheapest option available is $%.2f with %s shipping"
   % (cost, method)
 )
  

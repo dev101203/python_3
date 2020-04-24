@@ -13,8 +13,5 @@ else:
   print(name)
   print('overweight')
 
-  ###
-  def odd_nums(lst):
-    for item in lst:
-      if item % 2 == 1:
-      print(item)
+
+  

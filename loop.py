@@ -22,4 +22,14 @@ while len(students_in_poetry) < 6:
   
 print(students_in_poetry)
 
+# Lists comprehension
+celsius = [0, 10, 15, 32, -5, 27, 3]
+
+fahrenheit = [temp*(9/5) + 32 for temp in celsius]
+
+print(fahrenheit)
+
+
+
+
 
