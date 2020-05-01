@@ -1,10 +1,3 @@
-#iterating through strings
-def get_length(word):
-  counter = 0
-  for letter in word:
-    counter = counter + 1 
-  return counter
-print(get_length('blue'))
 
 #escape
 password = "theycallme \" crazy\" 91"

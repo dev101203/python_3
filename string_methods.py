@@ -73,3 +73,47 @@ for x in love_maybe:
     love.append(x.split())
 y = '\n'.join(love_maybe)
 print(love)
+
+## .replace() 
+# Replace takes two arguments and replaces all instances of the first argument in a string with the second argument. 
+#there was a mistake with his last name and all instances of Toomer are lacking one o.
+#Use .replace() to change all instances of Tomer in the bio to Toomer
+toomer_bio = \
+"""
+Nathan Pinchback Tomer, who adopted the name Jean Tomer early in his literary career, was born in Washington, D.C. in 1894. Jean is the son of Nathan Tomer was a mixed-race freedman, born into slavery in 1839 in Chatham County, North Carolina. Jean Tomer is most well known for his first book Cane, which vividly portrays the life of African-Americans in southern farmlands.
+"""
+toomer_bio_fixed = toomer_bio.replace('Tomer','Toomer')
+print(toomer_bio_fixed)
+
+## .find()
+
+god_wills_it_line_one = "The very earth will disown you"
+
+disown_placement = god_wills_it_line_one.find('disown')
+print(disown_placement)
+
+# .format()
+# takes variables as an argument and includes them in the string that 
+# it is run on. You include {} marks as placeholders for where those variables will be imported.
+def poem_title_card(poet, title):
+  poem_desc = "The poem \"{}\" is written by {}.".format(title, poet)
+  return poem_desc
+print(poem_title_card('I Hear America Singing','Walt Whitman'))
+
+##.format() 2 By including keywords in the string and in the arguments
+def poem_description(publishing_date, author, title, original_work):
+  poem_desc = "The poem {title} by {author} was originally published in {original_work} in {publishing_date}.".format(publishing_date = publishing_date, author = author, title = title, original_work = original_work)
+  return poem_desc
+
+author = "Shel Silverstein"
+title = "My Beard"
+original_work = "Where the Sidewalk Ends"
+publishing_date = "1974"
+
+my_beard_description = poem_description(publishing_date, author, title, original_work)
+
+print(my_beard_description)
+
+
+
+  
